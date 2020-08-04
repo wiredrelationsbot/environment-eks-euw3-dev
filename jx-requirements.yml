@@ -1,35 +1,87 @@
+autoUpdate:
+  enabled: false
+  schedule: ""
+bootConfigURL: https://github.com/wiredrelations/environment-eks-euw3-dev
 cluster:
-  clusterName: ""
-  environmentGitOwner: ""
-  environmentGitPublic: false
-  project: ""
-  provider: gke
-  zone: ""
-gitops: true
+  clusterName: eks-euw3
+  devEnvApprovers:
+  - wrbobby
+  - wiredrelationsbot
+  environmentGitOwner: wiredrelations
+  gitKind: github
+  gitName: github
+  gitServer: https://github.com
+  namespace: jx
+  provider: eks
+  region: eu-west-3
+  registry: 219865815739.dkr.ecr.eu-west-3.amazonaws.com
 environments:
-- key: dev
-- key: staging
-- key: production
+- ingress:
+    domain: jx.eks.wiredrelations.io
+    externalDNS: true
+    ignoreLoadBalancer: true
+    namespaceSubDomain: -jx.
+    tls:
+      email: bobby@wiredrelations.com
+      enabled: true
+      production: true
+  key: dev
+  repository: environment-eks-euw3-dev
+- ingress:
+    domain: ""
+    externalDNS: false
+    namespaceSubDomain: ""
+    tls:
+      email: ""
+      enabled: false
+      production: false
+  key: staging
+  repository: environment-eks-euw3-staging
+- ingress:
+    domain: ""
+    externalDNS: false
+    namespaceSubDomain: ""
+    tls:
+      email: ""
+      enabled: false
+      production: false
+  key: production
+  repository: environment-eks-euw3-production
+gitops: true
 ingress:
-  domain: ""
-  externalDNS: false
+  domain: jx.eks.wiredrelations.io
+  externalDNS: true
+  ignoreLoadBalancer: true
+  namespaceSubDomain: -jx.
   tls:
-    email: ""
-    enabled: false
-    production: false
+    email: bobby@wiredrelations.com
+    enabled: true
+    production: true
 kaniko: true
-secretStorage: local
+repository: nexus
+secretStorage: vault
 storage:
+  backup:
+    enabled: true
+    url: s3://eks-euw3-backup-9968fe26-2039-4075-a316-8185e4560ae7
   logs:
-    enabled: false
-    url: ""
+    enabled: true
+    url: s3://logs-eks-euw3-20200804084331672700000004
   reports:
-    enabled: false
-    url: ""
+    enabled: true
+    url: s3://reports-eks-euw3-20200804084331677700000007
   repository:
-    enabled: false
-    url: ""
+    enabled: true
+    url: s3://repository-eks-euw3-20200804084333076800000009
+terraform: true
+vault:
+  aws:
+    autoCreate: true
+    iamUserName: vault_eks
+velero:
+  schedule: ""
+  ttl: ""
 versionStream:
-  ref: "master"
+  ref: v1.0.559
   url: https://github.com/jenkins-x/jenkins-x-versions.git
 webhook: lighthouse

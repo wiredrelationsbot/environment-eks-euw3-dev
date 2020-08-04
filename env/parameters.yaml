@@ -1,0 +1,10 @@
+adminUser:
+  password: vault:eks-euw3/adminUser:password
+  username: admin
+enableDocker: false
+pipelineUser:
+  email: github@wiredrelations.com
+  token: vault:eks-euw3/pipelineUser:token
+  username: wiredrelationsbot
+prow:
+  hmacToken: vault:eks-euw3/prow:hmacToken
