@@ -1,0 +1,7 @@
+dependencies:
+- host: github.com
+  owner: wiredrelations
+  repo: vendor-query
+  url: https://github.com/wiredrelations/vendor-query.git
+  version: ""
+  versionURL: ""

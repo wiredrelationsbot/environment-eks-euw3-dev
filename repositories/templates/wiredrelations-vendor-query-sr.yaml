@@ -1,0 +1,21 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: wiredrelations
+    provider: github
+    repository: vendor-query
+  name: wiredrelations-vendor-query
+spec:
+  description: Imported application for wiredrelations/vendor-query
+  httpCloneURL: https://github.com/wiredrelations/vendor-query.git
+  org: wiredrelations
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: vendor-query
+  scheduler:
+    kind: ""
+    name: ""
+  url: https://github.com/wiredrelations/vendor-query.git
