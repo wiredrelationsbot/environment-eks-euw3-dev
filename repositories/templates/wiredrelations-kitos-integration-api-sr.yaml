@@ -1,0 +1,21 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: wiredrelations
+    provider: github
+    repository: kitos-integration-api
+  name: wiredrelations-kitos-integration-api
+spec:
+  description: Imported application for wiredrelations/kitos-integration-api
+  httpCloneURL: https://github.com/wiredrelations/kitos-integration-api.git
+  org: wiredrelations
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: kitos-integration-api
+  scheduler:
+    kind: ""
+    name: ""
+  url: https://github.com/wiredrelations/kitos-integration-api.git

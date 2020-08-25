@@ -1,7 +1,7 @@
 dependencies:
 - host: github.com
   owner: wiredrelations
-  repo: vendor-query
-  url: https://github.com/wiredrelations/vendor-query.git
+  repo: kitos-integration-api
+  url: https://github.com/wiredrelations/kitos-integration-api.git
   version: ""
   versionURL: ""

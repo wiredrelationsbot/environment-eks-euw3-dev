@@ -2,4 +2,4 @@
 
 Dependency | Sources | Version | Mismatched versions
 ---------- | ------- | ------- | -------------------
-[wiredrelations/vendor-query](https://github.com/wiredrelations/vendor-query.git) |  | []() | 
+[wiredrelations/kitos-integration-api](https://github.com/wiredrelations/kitos-integration-api.git) |  | []() | 
