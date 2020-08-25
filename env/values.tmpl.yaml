@@ -11,3 +11,8 @@ tekton:
 dex:
   certs:
     newApi: true
+
+kitos-integration-api:
+  env:
+  - name: PROFILE
+    value: dev
