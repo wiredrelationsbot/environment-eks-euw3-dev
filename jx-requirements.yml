@@ -17,9 +17,8 @@ cluster:
   registry: 219865815739.dkr.ecr.eu-west-3.amazonaws.com
 environments:
 - ingress:
-    domain: jx.eks.wiredrelations.io
+    domain: eks.wiredrelations.io
     externalDNS: true
-    ignoreLoadBalancer: true
     namespaceSubDomain: -jx.
     tls:
       email: bobby@wiredrelations.com
@@ -28,30 +27,29 @@ environments:
   key: dev
   repository: environment-eks-euw3-dev
 - ingress:
-    domain: ""
-    externalDNS: false
-    namespaceSubDomain: ""
+    domain: eks.wiredrelations.io
+    externalDNS: true
+    namespaceSubDomain: -jx.
     tls:
-      email: ""
-      enabled: false
-      production: false
+      email: bobby@wiredrelations.com
+      enabled: true
+      production: true
   key: staging
   repository: environment-eks-euw3-staging
 - ingress:
-    domain: ""
-    externalDNS: false
-    namespaceSubDomain: ""
+    domain: eks.wiredrelations.io
+    externalDNS: true
+    namespaceSubDomain: -jx.
     tls:
-      email: ""
-      enabled: false
-      production: false
+      email: bobby@wiredrelations.com
+      enabled: true
+      production: true
   key: production
   repository: environment-eks-euw3-production
 gitops: true
 ingress:
-  domain: jx.eks.wiredrelations.io
+  domain: eks.wiredrelations.io
   externalDNS: true
-  ignoreLoadBalancer: true
   namespaceSubDomain: -jx.
   tls:
     email: bobby@wiredrelations.com
