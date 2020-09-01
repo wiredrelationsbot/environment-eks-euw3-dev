@@ -1,0 +1,7 @@
+dependencies:
+- host: github.com
+  owner: wiredrelations
+  repo: kitos-integration-api
+  url: https://github.com/wiredrelations/kitos-integration-api.git
+  version: ""
+  versionURL: ""
