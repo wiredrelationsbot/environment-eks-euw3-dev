@@ -74,18 +74,8 @@ storage:
 terraform: true
 vault:
   aws:
-<<<<<<< HEAD
     autoCreate: true
     iamUserName: vault_eks
-=======
-    iamUserName: "vault_eks"
-    dynamoDBTable: "vault-data_3a807c8"
-    dynamoDBRegion: "eu-west-3"
-    kmsKeyId: "93c21502-1881-4315-9525-75e4f91b6a7f"
-    kmsRegion: "eu-west-3"
-    s3Bucket: "vault-unseal.eu-west-3.jenkins-x-domain-3a807c8"
-    s3Region: "eu-west-3"
->>>>>>> 6407f3c... set vault
 velero:
   schedule: ""
   ttl: ""
