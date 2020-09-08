@@ -29,13 +29,13 @@ environments:
   repository: environment-eks-euw3-dev
 - ingress:
     domain: eks.wiredrelations.io
-    externalDNS: false
+    externalDNS: true
     ignoreLoadBalancer: true
     namespaceSubDomain: -jx.
     tls:
-      email: ""
-      enabled: false
-      production: false
+      email: bobby@wiredrelations.com
+      enabled: true
+      production: true
   key: staging
   repository: environment-eks-euw3-staging
 - ingress:
