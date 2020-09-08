@@ -78,13 +78,13 @@ storage:
 terraform: true
 vault:
   aws:
+    dynamoDBRegion: eu-west-3
+    dynamoDBTable: vault-data_39775a7
     iamUserName: vault_eks
-    dynamoDBTable: "vault-data_39775a7"
-    dynamoDBRegion: "eu-west-3"
-    kmsKeyId: "22423176-76f7-4db8-b019-86e7733af8c1"
-    kmsRegion: "eu-west-3"
-    s3Bucket: "vault-unseal.eu-west-3.jenkins-x-domain-39775a7"
-    s3Region: "eu-west-3"
+    kmsKeyId: 22423176-76f7-4db8-b019-86e7733af8c1
+    kmsRegion: eu-west-3
+    s3Bucket: vault-unseal.eu-west-3.jenkins-x-domain-39775a7
+    s3Region: eu-west-3
 velero:
   schedule: ""
   ttl: ""
