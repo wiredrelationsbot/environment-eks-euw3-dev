@@ -5,3 +5,9 @@ dependencies:
   url: https://github.com/wiredrelations/kitos-integration-api.git
   version: ""
   versionURL: ""
+- host: github.com
+  owner: wiredrelations
+  repo: wire-suggestions-query
+  url: https://github.com/wiredrelations/wire-suggestions-query.git
+  version: ""
+  versionURL: ""
