@@ -11,3 +11,9 @@ dependencies:
   url: https://github.com/wiredrelations/wire-suggestions-query.git
   version: ""
   versionURL: ""
+- host: github.com
+  owner: wiredrelations
+  repo: wire-document-api
+  url: https://github.com/wiredrelations/wire-document-api.git
+  version: ""
+  versionURL: ""
