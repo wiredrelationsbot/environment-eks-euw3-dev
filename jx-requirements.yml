@@ -8,6 +8,7 @@ cluster:
   - wrbobby
   - wiredrelationsbot
   environmentGitOwner: wiredrelations
+  environmentGitPublic: false
   gitKind: github
   gitName: github
   gitServer: https://github.com
