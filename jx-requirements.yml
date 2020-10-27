@@ -8,7 +8,6 @@ cluster:
   - wrbobby
   - wiredrelationsbot
   environmentGitOwner: wiredrelations
-  environmentGitPublic: false
   gitKind: github
   gitName: github
   gitServer: https://github.com
@@ -79,6 +78,7 @@ storage:
 terraform: true
 vault:
   aws:
+    autoCreate: false
     dynamoDBRegion: eu-west-3
     dynamoDBTable: vault-data_39775a7
     iamUserName: vault_eks
