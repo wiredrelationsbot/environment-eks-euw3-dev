@@ -13,7 +13,7 @@ dependencies:
   versionURL: ""
 - host: github.com
   owner: wiredrelations
-  repo: wire-report-engine
-  url: https://github.com/wiredrelations/wire-report-engine.git
+  repo: report-engine
+  url: https://github.com/wiredrelations/report-engine.git
   version: ""
   versionURL: ""

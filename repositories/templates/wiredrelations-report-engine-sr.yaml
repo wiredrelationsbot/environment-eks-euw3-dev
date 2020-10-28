@@ -1,0 +1,21 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: wiredrelations
+    provider: github
+    repository: report-engine
+  name: wiredrelations-report-engine
+spec:
+  description: Imported application for wiredrelations/report-engine
+  httpCloneURL: https://github.com/wiredrelations/report-engine.git
+  org: wiredrelations
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: report-engine
+  scheduler:
+    kind: ""
+    name: ""
+  url: https://github.com/wiredrelations/report-engine.git
